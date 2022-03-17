@@ -9,6 +9,7 @@ Web application to showcase works done throughout career.
 * About Me
 * Work
 * Contact Me
+* Resume
 
 ## How To:
 Navigation bar links should navigate to appropriate section of the Portfolio application.
