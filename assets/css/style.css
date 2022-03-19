@@ -33,10 +33,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../images/Hero.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
+    background-color: var(--footer-color);
     z-index: 9999;
 }
 
@@ -88,16 +85,32 @@ header nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero-cta {
-    background-image: url("../images/Hero.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+.hero-section {
+    position: relative;
 }
+
+.img {
+    width: 100%;
+    max-height: auto;
+    object-fit: fill;
+    border-bottom: none;
+}
+
+.text-h2 {
+    font-size: 56px;
+    position: absolute;
+    bottom: 42px;
+    right: 16px;
+}
+
+.text-p {
+    font-size: 26px;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
 
 /* About Me Section */
 
