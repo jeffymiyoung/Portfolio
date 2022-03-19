@@ -4,6 +4,7 @@
     --text-black: rgba(22, 23, 20);
     --text-white: #FFF;
     --neon-pink: #FF10F0;
+    --footer-color: rgba(240, 208, 218);
 
 }
 
@@ -44,7 +45,7 @@ header h1 {
     font-size: 36px;
     color: var(--text-black);
     margin: 0;
-    text-shadow: 0 0 10px rgba(22, 23, 20, 0.5);
+    text-shadow: 0 0 10px rgba(221, 189, 221, 0.788);
     padding: 10;
 }
 
@@ -108,7 +109,25 @@ header nav ul li a:hover {
 
 
 /* Footer Section */
+footer {
+    background-color: var(--footer-color);
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+footer h2 {
+    font-size: 2vw;
+    margin: 0;
+    color: var(--text-black);
+}
+
+footer p {
+    line-height: 3.5;
+    text-align: right;
+}
 
 /* Media Queries for Smaller Screen Sizes */
 
