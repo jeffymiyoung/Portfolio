@@ -17,10 +17,35 @@
 }
 
 /* Utility Classes */
-.about-me .work-section .contact-me {
-    display: flex;
-    margin-right: 20%;
+.section {
+    margin: 16px 32px 16px 32px;
 }
+
+.section h1 {
+    font-size: 32px;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+/* */
+.section div {
+    min-width: 200px;
+}
+
+.section-diva {
+    align-items: center;
+    float: left;
+    padding-right: 16px;
+}
+
+.section-divb {
+    display: flex;
+    border-left: 4px solid var(--border-color);
+    padding-left: 16px;
+}
+
 
 /* Body (full website) Section */
 body {
@@ -71,7 +96,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     text-shadow: 0 0 10px rgba(22, 23, 20, 0.5);
 }
 
@@ -89,130 +114,85 @@ header nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero-section {
+.section-hero {
+    position: relative;
+    background-color: var(--footer-color);
+    text-align: right;
+}
+
+.section-hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.section-hero div {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Work References Section  */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 16px;
+}
+
+.grid-container > div {
+
+}
+
+.item-main {
+    grid-area: 1 / span 2;
+}
+
+.item {
     position: relative;
 }
 
-.img {
+.item h2 {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
+.grid-container img {
     width: 100%;
-    max-height: auto;
+    height: 100%;
     object-fit: fill;
-    border-bottom: none;
 }
 
-.text-h2 {
-    font-size: 56px;
-    position: absolute;
-    bottom: 42px;
-    right: 16px;
-}
-
-.text-p {
-    font-size: 26px;
-    font-weight: lighter;
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-
-
-/* About Me Section */
-
-
-/* Work References Section  */
-.work-section {
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.work-section h2 {
-    font-weight: bold;
-    font-size: 56px;
-    color: var(--text-black);
-    margin: 25px;
-    border-right: 5px solid var(--border-color);
-}
-
-.resize-showcase {
-    width: 400px;
-    height: 250px;
+.shadow {
     opacity: 45%;
 }
 
-.resize {
-    width: 250px;
-    height: 150px;
-    opacity: 45%;
-}
-
-.resize-showcase:hover, .resize:hover {
+.shadow:hover {
     opacity: 100%;
 }
 
-.work-showcase {
-    display: flex;
-    flex-direction: column;
-    margin-left: 600px;
-    justify-content: space-around;
-    padding: 90px;
-}
-
-.work-current {
-
-}
-
-.work-past {
-    display: flex;
-    justify-content: space-between;
-}
-
-.button {
-    display: flex;
-    padding: 20px;
+.item-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    padding: 16px;
     color: var(--text-black);
     background-color: var(--footer-color);
-    border-radius: 15px;
+    border-radius: 8px;
     text-decoration: none;
     opacity: 1;
 }
 
 /* Contact Me Section */
-.contact-me {
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.section-contact{
+    margin-bottom: 50px;
 }
 
-.contact-me h2 {
-    font-weight: bold;
-    font-size: 56px;
-    color: var(--text-black);
-    margin: 50px;
-    border-right: 5px solid var(--border-color);
-    padding-right: 50px;
-}
-
-.contact-me nav {
-    margin: 60px 350px;
-}
-
-.contact-me nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    flex: 1;
-    
-}
-
-.contact-me nav ul li a {
+.div-contact {
+    font-size: 32px;
+    margin-left: 16px;
     text-decoration: none;
-    padding: 25px 30px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+    justify-content: space-evenly;
 }
 
 /* Footer Section */
