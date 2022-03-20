@@ -17,7 +17,10 @@
 }
 
 /* Utility Classes */
-
+.about-me .work-section .contact-me {
+    display: flex;
+    margin-right: 20%;
+}
 
 /* Body (full website) Section */
 body {
@@ -120,22 +123,24 @@ header nav ul li a:hover {
 
 
 /* Contact Me Section */
+.contact-me {
+    flex-direction: row;
+    align-items: baseline;
+}
+
 .contact-me h2 {
-    display: flex;
-    align-items: flex-start;
     font-weight: bold;
     font-size: 56px;
     color: var(--text-black);
-    margin: 10px;
+    margin: 50px;
+    border-right: 5px solid var(--border-color);
 }
 
 .contact-me nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
     list-style: none;
-    border-left: 5px solid var(--border-color);
+    
 }
 
 .contact-me nav ul li a {
