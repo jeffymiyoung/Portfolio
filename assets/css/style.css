@@ -16,40 +16,9 @@
     box-sizing: border-box;
 }
 
-/* Utility Classes */
-.section {
-    margin: 16px 32px 16px 32px;
-}
-
-.section h1 {
-    font-size: 32px;
-}
-
-.section p {
-    font-size: 16px;
-}
-
-/* */
-.section div {
-    min-width: 200px;
-}
-
-.section-diva {
-    text-align: right;
-    float: left;
-    padding-right: 16px;
-}
-
-.section-divb {
-    display: flex;
-    border-left: 4px solid var(--border-color);
-    padding-left: 16px;
-}
-
-
 /* Body (full website) Section */
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--pale-pink); 
 }
 
@@ -112,14 +81,48 @@ header nav ul li a:hover {
         0 0 102px var(--neon-pink),
         0 0 151px var(--neon-pink);
 }
+/* Section Styling for all About|Work|Contact sections */ 
+.section {
+    margin: 16px 32px 16px 32px;
+}
+
+.section h1 {
+    font-size: 32px;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+.section div {
+    min-width: 200px;
+}
+
+.section-diva {
+    float: left;
+    text-align: right;
+    padding-right: 16px;
+}
+
+.section-divb {
+    display: flex;
+    border-left: 4px solid var(--border-color);
+    padding-left: 16px;
+}
 
 /* Hero Section */
 .section-hero {
     position: relative;
-    background-color: var(--footer-color);
     text-align: right;
+    background-color: var(--footer-color);
     margin: 0px;
     padding: 16px 32px 16px 32px;
+}
+
+.section-hero div {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
 }
 
 .section-hero img {
@@ -128,10 +131,15 @@ header nav ul li a:hover {
     object-fit: contain;
 }
 
-.section-hero div {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
+/* About Me Section */
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    border-radius: 50%;
+    transform: scale(0.5);
 }
 
 /* Work References Section  */
@@ -145,10 +153,6 @@ header nav ul li a:hover {
 
 }
 
-.item-main {
-    grid-area: 1 / span 2;
-}
-
 .item {
     position: relative;
 }
@@ -158,6 +162,11 @@ header nav ul li a:hover {
     left: 16px;
     bottom: 16px;
 }
+
+.item-main {
+    grid-area: 1 / span 2;
+}
+
 
 .item-img {
     width: 100%;
@@ -209,7 +218,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 2vw;
+    font-size: 2em;
     margin: 0;
     padding-top: 10px;
     color: var(--text-black);
@@ -221,5 +230,47 @@ footer p {
 }
 
 /* Media Queries for Smaller Screen Sizes */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        position: relative;
+        justify-content: center;
+    }
 
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
 
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        justify-content: space-evenly;
+    }
+
+    footer h2, footer div {
+        align-items: center;
+        width: 100%;
+    }
+
+    section {
+        margin: auto;
+    }
+    
+    .section-diva {
+        margin-bottom: 6px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-contact {
+        font-size: 16px;
+}
