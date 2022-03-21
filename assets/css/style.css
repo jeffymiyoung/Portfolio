@@ -149,10 +149,6 @@ header nav ul li a:hover {
     grid-gap: 16px;
 }
 
-.grid-container > div {
-
-}
-
 .item {
     position: relative;
 }
@@ -273,4 +269,5 @@ footer p {
 
     .div-contact {
         font-size: 16px;
+    }
 }

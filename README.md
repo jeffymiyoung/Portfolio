@@ -16,6 +16,7 @@ Navigation bar links should navigate to appropriate section of the Portfolio app
 
 ## Screenshots:
 https://jeffymiyoung.github.io/Portfolio/
+
 ![This is the homepage for my Portfolio Web Application](./assets/images/Portfolio%20Screenshot.JPG) 
 
 
